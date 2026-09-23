@@ -1,0 +1,174 @@
+@font-face {
+  font-family: 'Book Insanity'; /* set name */
+  src: url(fonts/Bookinsanity.otf); /* url of the font */
+}
+
+@font-face {
+  font-family: 'Mr Eaves Small Caps'; /* set name */
+  src: url(fonts/MrEavesSmallCaps.otf); /* url of the font */
+}
+
+html {
+font-size: clamp(12px, 2vw, 14px);
+}
+
+body {
+    background-color:#303030;
+}
+
+div.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #EEE5CE;
+    padding: 7px 14px;
+    background-image: url(img/parchmentbackground.jpg);
+}
+
+div.gallery {
+    display: grid;
+    grid-template-columns: 25px 200px 200px 25px;
+    grid-template-rows: 50px 250px 250px 250px;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+div.bigger-card {
+    grid-column-start: 1;
+    grid-column: span 2;
+    grid-row: span 2;
+    padding: 10px 20px;
+}
+
+div.first-column {
+    grid-column-start: 2;
+}
+
+h1 {
+font-size: 1rem;
+font-family: 'Mr Eaves Small Caps', 'Times New Roman', Times, serif;
+font-weight: normal;
+line-height: 1rem;
+margin: 0px;
+color: #FFF;
+text-align: center;
+background-color: #58180D;
+width: 100%;
+padding: 5px;
+}
+
+h2 {
+font-size: 0.7rem;
+line-height: 1rem;
+font-family: 'Book Insanity', 'Times New Roman', Times, serif;
+color:#131313;
+margin: 5px;
+font-weight: normal;
+font-style: italic;
+text-align: center;
+}
+
+h3 {
+font-size: 2rem;
+font-family: 'Mr Eaves Small Caps', 'Times New Roman', Times, serif;
+font-weight: normal;
+margin: 5px;
+margin-bottom: 15px;
+color: #FFF;
+text-align: center;
+}
+
+
+p {
+font-size: 0.8rem;
+font-family: 'Book Insanity', 'Times New Roman', Times, serif;
+color: #131313;
+font-weight: normal;
+text-align: center;
+align-content: center;
+margin-top: 5px;
+padding: 7px;
+border: 2px solid #58180D; 
+}
+
+img {
+    max-height: 100px;
+    padding: 2px;
+}
+
+h1.big {
+font-size: 1.25rem;
+line-height: 1rem;
+padding: 10px;
+}
+
+h2.big {
+font-size: 0.80rem;
+line-height: 1rem;
+}
+
+p.big {
+font-size: 0.90rem;
+}
+
+img.big {
+    max-height: 120px;
+    padding: 5px;
+}
+
+p#credits {
+    color: #FFF;
+    margin-top: 5px;
+    margin: 5px;
+    border: none; 
+}
+
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    div.gallery {
+    grid-template-columns: 200px;
+    grid-template-rows: repeat(6, 250px);
+    row-gap: 0.5rem;
+    }
+
+    div.bigger-card {
+    grid-column-start: auto;
+    grid-column: auto;
+    grid-row: auto;
+    padding: 7px 14px;
+    }
+
+    div.first-column {
+    grid-column-start: auto;
+    }
+
+    h1.big {
+    font-size: 1rem;
+    line-height: 1rem;
+    padding: 5px;
+    }
+
+    h2.big {
+    font-size: 0.7rem;
+    line-height: 1rem;
+    }
+
+    p.big {
+    font-size: 0.8rem;
+    }
+
+    img.big {
+    max-height: 100px;
+    padding: 2px;
+    }
+}
