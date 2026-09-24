@@ -1,15 +1,15 @@
 @font-face {
-font-family: 'Book Insanity'; /* set name */
-src: url(fonts/Bookinsanity.otf); /* url of the font */
+font-family: 'Book Insanity';
+src: url(fonts/Bookinsanity.otf);
 }
 
 @font-face {
-font-family: 'Mr Eaves Small Caps'; /* set name */
-src: url(fonts/MrEavesSmallCaps.otf); /* url of the font */
+font-family: 'Mr Eaves Small Caps'; 
+src: url(fonts/MrEavesSmallCaps.otf); 
 }
 
 html {
-font-size: clamp(12px, 2vw, 14px);
+font-size: clamp(13px, 2vw, 14px);
 }
 
 body {
@@ -55,7 +55,6 @@ h1 {
 font-size: 1rem;
 font-family: 'Mr Eaves Small Caps', 'Times New Roman', Times, serif;
 font-weight: normal;
-line-height: 1rem;
 margin: 0px;
 color: #FFF;
 text-align: center;
@@ -66,7 +65,6 @@ padding: 5px;
 
 h2 {
 font-size: 0.7rem;
-line-height: 1rem;
 font-family: 'Book Insanity', 'Times New Roman', Times, serif;
 color:#131313;
 margin: 5px;
@@ -106,13 +104,11 @@ padding: 2px;
 
 h1.big {
 font-size: 1.25rem;
-line-height: 1rem;
 padding: 10px;
 }
 
 h2.big {
 font-size: 0.80rem;
-line-height: 1rem;
 }
 
 p.big {
@@ -126,7 +122,6 @@ padding: 5px;
 
 p#credits {
 color: #FFF;
-margin-top: 5px;
 margin: 5px;
 border: none; 
 text-shadow: 3px 3px 3px #291700d2;
@@ -141,7 +136,47 @@ a:hover {
 text-decoration: underline;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
+    div.gallery {
+    grid-template-columns: 225px;
+    grid-template-rows: repeat(6, 300px);
+    row-gap: 0.7rem;
+    }
+
+    div.bigger-card {
+    grid-column-start: auto;
+    grid-column: auto;
+    grid-row: auto;
+    }
+
+    div.first-column {
+    grid-column-start: auto;
+    }
+
+    div.card {
+    padding: 10px 20px;
+    }
+
+    h1 {
+    font-size: 1.25rem;
+    padding: 10px;
+    }
+
+    h2 {
+    font-size: 0.80rem;
+    }
+
+    p {
+    font-size: 0.90rem;
+    }
+
+    img {
+    max-height: 120px;
+    padding: 5px;
+    }
+}
+
+@media (max-width: 300px) {
     div.gallery {
     grid-template-columns: 200px;
     grid-template-rows: repeat(6, 250px);
@@ -149,32 +184,23 @@ text-decoration: underline;
     }
 
     div.bigger-card {
-    grid-column-start: auto;
-    grid-column: auto;
-    grid-row: auto;
     padding: 7px 14px;
     }
 
-    div.first-column {
-    grid-column-start: auto;
-    }
-
-    h1.big {
+    h1, h1.big {
     font-size: 1rem;
-    line-height: 1rem;
     padding: 5px;
     }
 
-    h2.big {
+    h2, h2.big {
     font-size: 0.7rem;
-    line-height: 1rem;
     }
 
-    p.big {
+    p, p.big {
     font-size: 0.8rem;
     }
 
-    img.big {
+    img, img.big {
     max-height: 100px;
     padding: 2px;
     }
