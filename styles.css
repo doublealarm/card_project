@@ -1,11 +1,11 @@
 @font-face {
-  font-family: 'Book Insanity'; /* set name */
-  src: url(fonts/Bookinsanity.otf); /* url of the font */
+font-family: 'Book Insanity'; /* set name */
+src: url(fonts/Bookinsanity.otf); /* url of the font */
 }
 
 @font-face {
-  font-family: 'Mr Eaves Small Caps'; /* set name */
-  src: url(fonts/MrEavesSmallCaps.otf); /* url of the font */
+font-family: 'Mr Eaves Small Caps'; /* set name */
+src: url(fonts/MrEavesSmallCaps.otf); /* url of the font */
 }
 
 html {
@@ -13,37 +13,42 @@ font-size: clamp(12px, 2vw, 14px);
 }
 
 body {
-    background-color:#303030;
+background-color:#303030;
+background-image: url(img/oaktexture.jpg);
+background-repeat: repeat;
+background-size: auto 350px;
 }
 
 div.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #EEE5CE;
-    padding: 7px 14px;
-    background-image: url(img/parchmentbackground.jpg);
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+background-color: #EEE5CE;
+padding: 7px 14px;
+border-radius: 5px;
+box-shadow: 5px 5px 5px #291700d2;
+background-image: url(img/parchmentbackground.jpg);
 }
 
 div.gallery {
-    display: grid;
-    grid-template-columns: 25px 200px 200px 25px;
-    grid-template-rows: 50px 250px 250px 250px;
-    gap: 10px;
-    justify-content: center;
-    align-content: center;
+display: grid;
+grid-template-columns: 25px 200px 200px 25px;
+grid-template-rows: 50px 250px 250px 250px;
+gap: 10px;
+justify-content: center;
+align-content: center;
 }
 
 div.bigger-card {
-    grid-column-start: 1;
-    grid-column: span 2;
-    grid-row: span 2;
-    padding: 10px 20px;
+grid-column-start: 1;
+grid-column: span 2;
+grid-row: span 2;
+padding: 10px 20px;
 }
 
 div.first-column {
-    grid-column-start: 2;
+grid-column-start: 2;
 }
 
 h1 {
@@ -77,6 +82,7 @@ font-weight: normal;
 margin: 5px;
 margin-bottom: 15px;
 color: #FFF;
+text-shadow: 3px 3px 3px #291700d2;
 text-align: center;
 }
 
@@ -94,8 +100,8 @@ border: 2px solid #58180D;
 }
 
 img {
-    max-height: 100px;
-    padding: 2px;
+max-height: 100px;
+padding: 2px;
 }
 
 h1.big {
@@ -114,24 +120,25 @@ font-size: 0.90rem;
 }
 
 img.big {
-    max-height: 120px;
-    padding: 5px;
+max-height: 120px;
+padding: 5px;
 }
 
 p#credits {
-    color: #FFF;
-    margin-top: 5px;
-    margin: 5px;
-    border: none; 
+color: #FFF;
+margin-top: 5px;
+margin: 5px;
+border: none; 
+text-shadow: 3px 3px 3px #291700d2;
 }
 
 a {
-  color: #FFF;
-  text-decoration: none;
+color: #FFF;
+text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+text-decoration: underline;
 }
 
 @media (max-width: 700px) {
